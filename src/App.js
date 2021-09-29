@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import NotFound from './components/NotFound/NotFound';
 import Culture from './components/Culture/Culture';
+import PostDetail from './components/PostDetail/PostDetail';
 
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
           <Route exact path="/about">
             <About> </About>
           </Route>
+          <Route path="/post/:postId">
+            <PostDetail></PostDetail>
+
+          </Route>
+
           <Route exact path="/about/culture">
             <Culture> </Culture>
           </Route>
